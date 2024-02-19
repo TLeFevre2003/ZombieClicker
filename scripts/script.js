@@ -47,6 +47,6 @@ let ak74u = new Weapon("Ak74u","../assets/ak74u.png",5,1000);
 const ak74uImg = document.querySelector("#Ak74u");
 ak74uImg.addEventListener("click", () => ak74u.click(zombieCount,cps));
 
-let Ray_Gun = new Weapon("Ray_Gun","../assets/Ray Gun.jpeg",50,5000);
+let Ray_Gun = new Weapon("Ray_Gun","../assets/RayGun.jpeg",50,5000);
 const rayGunImg = document.querySelector("#Ray_Gun");
 rayGunImg.addEventListener("click", () => Ray_Gun.click(zombieCount,cps));
