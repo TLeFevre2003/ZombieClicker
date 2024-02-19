@@ -30,7 +30,10 @@ function updateDisplayCount()
 setInterval(updateCount, 1000); // Fixed: invoking updateCount function
 setInterval(updateDisplayCount, 16); // Fixed: invoking updateDisplayCount function
 
-
+// Create image element
+let image = document.createElement("img");
+image.src = "../assets/knife.png";
+document.querySelector("#weapons").appendChild(image);
 
 // weapon stuff
 let knife = new Weapon("Knife","../assets/knife.png",.1,20);
