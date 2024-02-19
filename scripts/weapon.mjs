@@ -1,3 +1,4 @@
+//scripts/weapon.mjs
 class Weapon {
     constructor(name, imagePath, value, cost) {
         this.name = name;
