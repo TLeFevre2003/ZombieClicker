@@ -17,7 +17,7 @@ class Weapon {
         weapon.appendChild(nameElement);
     
         // Create image element
-        let image = document.createElement("img");
+        let image = new Image();
         image.src = this.imagePath;
         image.id = this.name;
         weapon.appendChild(image);
