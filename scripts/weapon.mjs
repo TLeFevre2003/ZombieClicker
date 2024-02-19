@@ -18,7 +18,18 @@ class Weapon {
     
         // Create image element
         let image = document.createElement("img");
-        image.src = this.imagePath;
+
+        // Fetch image
+        fetch(imagePath)
+            .then(response => response.blob())
+            .then(blob => {
+                const imageUrl = URL.createObjectURL(blob);
+                image.src = imageUrl;
+            })
+            .catch(error => {
+                console.error('Error fetching image:', error);
+            });
+
         image.id = this.name;
         weapon.appendChild(image);
     
