@@ -36,7 +36,7 @@ setInterval(updateDisplayCount, 16); // Fixed: invoking updateDisplayCount funct
 
 // Wait for the DOM content to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    let knife = new Weapon("Knife","/assets/knife.png",.1,20);
+    let knife = new Weapon("Knife","knife.png",.1,20);
     const knifeImg = document.querySelector("#Knife");
     knifeImg.addEventListener("click", () => knife.click(zombieCount,cps));
 
