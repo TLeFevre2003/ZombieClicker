@@ -52,11 +52,14 @@ const rayGunImg = document.querySelector("#Ray_Gun");
 rayGunImg.addEventListener("click", () => Ray_Gun.click(zombieCount,cps));
 
 
-// Create a new image element
-var img = new Image();
-
-// Set the source of the image
-img.src = 'assets/knife.png';
-
-// Add the image element to the document
-document.getElementById('weapons').appendChild(img);
+// Wait for the DOM content to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Create a new image element
+    var img = new Image();
+    
+    // Set the source of the image
+    img.src = 'assets/knife.png';
+    
+    // Add the image element to the document
+    document.getElementById('weapons').appendChild(img);
+  });
