@@ -36,7 +36,7 @@ setInterval(updateDisplayCount, 16); // Fixed: invoking updateDisplayCount funct
 
 // Wait for the DOM content to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    let knife = new Weapon("Knife","knife.png",.1,20);
+    let knife = new Weapon("Knife","/assets/knife.png",.1,20);
     const knifeImg = document.querySelector("#Knife");
     knifeImg.addEventListener("click", () => knife.click(zombieCount,cps));
 
@@ -55,15 +55,4 @@ document.addEventListener("DOMContentLoaded", function() {
     let Ray_Gun = new Weapon("Ray_Gun","/assets/RayGun.jpeg",50,5000);
     const rayGunImg = document.querySelector("#Ray_Gun");
     rayGunImg.addEventListener("click", () => Ray_Gun.click(zombieCount,cps));
-
-
-
-    // Create a new image element
-    var img = new Image();
-    
-    // Set the source of the image
-    img.src = 'assets/knife.png';
-    
-    // Add the image element to the document
-    document.getElementById('weapons').appendChild(img);
 });
