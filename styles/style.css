@@ -39,3 +39,12 @@ h2
 .weapon > div {
     margin-bottom: 5px; /* Adjust spacing between text elements */
 }
+
+img {
+    transition: transform 0.3s ease; /* Add smooth transition effect to all images */
+}
+  
+img:active {
+    transform: scale(1.1); /* Increase size by 10% when clicked */
+    cursor: pointer; /* Change cursor on click to indicate interactivity */
+}
