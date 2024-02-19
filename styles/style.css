@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+h2 
+{
+    display: inline; /* make h2 display inline */
+}
+#zombieCount, #cpsCount
+{
+    display: inline; /* make the zombie count display inline */
+}
+#zombie
+{
+    width: 20%;
+    height: auto;
+    display: block; /* Display as a block */
+    margin: 0 auto; /* Center horizontally */
+}
+.uidisplay
+{
+    text-align: center;
+}
+
+.weapon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust spacing between weapons */
+}
+
+.weapon img {
+    width: 10%; /* Adjust image width as needed */
+    height: auto; /* Adjust image height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Adjust spacing between image and text */
+}
+
+.weapon > div {
+    margin-bottom: 5px; /* Adjust spacing between text elements */
+}
