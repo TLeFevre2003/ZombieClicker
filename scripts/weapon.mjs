@@ -60,7 +60,7 @@ class Weapon {
 
     click(zombiecount,cps) 
     {
-        console.log('clicked');
+        // does not purchase unless you have enough zombies
         if ( zombiecount.value >= this.cost)
         {
             zombiecount.value-=this.cost;
@@ -69,6 +69,8 @@ class Weapon {
             cps.value += this.clickValue;
             this.count++;
         }
+
+        // Wont change unless the if statement was true
         this.countValue.textContent = this.count;
         this.costValue.textContent = this.cost;
         
